@@ -122,4 +122,48 @@
 
 
     }
+
+    .design-skills {
+
+        .skill {
+
+            .skill-top {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 10px 0;
+                align-content: center;
+
+                .name {
+                    color: $primaryColor;
+                    font-size: 14px;
+                }
+
+                .percent {
+                    color: $statsNumberColor;
+                    font-size: 14px;
+                }
+            }
+
+            .skill-bottom {
+
+                .progress {
+                    border-radius: 4px;
+                    background-color: $progressBarBgColor;
+                    height: 6px;
+
+                    .bar {
+                        display: block;
+                        height: 100%;
+                        background-color: $progressBarColor;
+                        border-radius: 4px;
+
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
 }
