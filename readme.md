@@ -5,3 +5,4 @@ Technology which I used to create this project
 * SCSS
 * JS
 * GIT
+[My CV] (https://anngee02.github.io/CV/)
