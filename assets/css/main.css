@@ -1,0 +1,521 @@
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ebe9ec #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.031372549);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(235, 233, 236, 0.568627451);
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.2196078431);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/main_bg_3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center bottom;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  max-width: 1660px;
+  padding: 80px 100px;
+  margin: 0 auto;
+}
+.page .header {
+  width: 25%;
+  background-color: rgba(86, 184, 135, 0.06);
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+.page .header .photo {
+  text-align: center;
+  position: relative;
+  max-width: 130px;
+  width: 100%;
+  height: 130px;
+  position: relative;
+  margin: 60px auto 30px auto;
+}
+.page .header .photo::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 50%;
+  position: absolute;
+  inset: 3px auto auto 3px;
+  z-index: -1;
+  width: 100%;
+  max-width: 130px;
+  aspect-ratio: 1;
+}
+.page .header .photo img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.page .header .name {
+  color: #fff;
+  font-size: 22px;
+  font-size: clamp(22px, 19.3608247423px + 0.824742268vw, 30px);
+  margin: 0 0 7px 0;
+}
+.page .header .role {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.page .header .social-icons {
+  background-color: rgba(225, 225, 225, 0.1);
+  border-radius: 25px;
+  padding: 3px 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+.page .header .social-icons a {
+  color: #fff;
+}
+.page .header .content {
+  width: 75%;
+  height: 100%;
+}
+.page .header .phone a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.page .header .mail a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.page .content {
+  width: 75%;
+  height: 100%;
+  position: relative;
+}
+.page .content .section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.aboutMe .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutMe .person .person-info {
+  width: 50%;
+  padding: 0 60px;
+}
+.aboutMe .person .person-info h4 {
+  margin: 0 0 15px 0;
+  color: #9baab3;
+  font-size: 18px;
+  font-weight: 300;
+}
+.aboutMe .person .person-info h2 {
+  margin: 0 0 30px 0;
+  color: #000;
+  font-size: 30px;
+  font-size: clamp(30px, 24.7216494845px + 1.6494845361vw, 46px);
+}
+.aboutMe .person .person-info p {
+  color: #555;
+  line-height: 1.65em;
+}
+.aboutMe .person .person-photo {
+  width: 50%;
+}
+.aboutMe .person .person-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 30% 70% 68% 32%/42% 16% 84% 58%;
+}
+.aboutMe .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px -15px;
+}
+.aboutMe .stats .stat-item {
+  width: 33.3333333333%;
+  padding: 0 15px;
+}
+.aboutMe .stats .stat-item .outline {
+  padding: 0 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.aboutMe .stats .stat-item .outline i {
+  position: absolute;
+  inset: 50% auto auto 0;
+  font-size: 78px;
+  translate: -40% -50%;
+  z-index: 2;
+  color: #555;
+  opacity: 0.3;
+}
+.aboutMe .stats .stat-item .outline .title {
+  text-align: right;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0 15px 0;
+}
+.aboutMe .stats .stat-item .outline .number {
+  text-align: right;
+  color: #9baab3;
+  font-size: 36px;
+  margin: 0;
+}
+.aboutMe .offer .block-tittle {
+  font-size: 16px;
+  font-size: clamp(16px, 14.0206185567px + 0.618556701vw, 22px);
+}
+.aboutMe .offer .services-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px -20px;
+}
+.aboutMe .offer .services-box .service {
+  width: 50%;
+  display: block;
+  padding: 0 20px;
+}
+.aboutMe .offer .services-box .service i {
+  color: #56b887;
+  font-size: 20px;
+  font-size: clamp(20px, 13.4020618557px + 2.0618556701vw, 40px);
+}
+.aboutMe .offer .services-box .service .service-title {
+  font-size: 12px;
+  font-size: clamp(12px, 10.0206185567px + 0.618556701vw, 18px);
+  font-weight: 600;
+}
+.aboutMe .offer .services-box .service .service-info {
+  font-size: 10px;
+  font-size: clamp(10px, 8.0206185567px + 0.618556701vw, 16px);
+  line-height: 1.6rem;
+  color: #555;
+}

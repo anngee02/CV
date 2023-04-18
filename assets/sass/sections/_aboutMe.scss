@@ -1,0 +1,125 @@
+.aboutMe {
+    .person {
+        display: flex;
+        align-items: center;
+
+        .person-info {
+            width: 50%;
+            padding: 0 60px;
+
+            h4 {
+                margin: 0 0 15px 0;
+                color: $personInfoAboutMe;
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            h2 {
+                margin: 0 0 30px 0;
+                color: $primaryColor;
+                @include fluid-type(320px, 1290px, 30px, 46px)
+            }
+
+            p {
+                color: $secondaryColor;
+                line-height: 1.65em;
+            }
+
+        }
+
+        .person-photo {
+            width: 50%;
+
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 30% 70% 68% 32% / 42% 16% 84% 58%;
+            }
+        }
+    }
+
+
+    .stats {
+        display: flex;
+        margin: 50px -15px;
+
+        .stat-item {
+            width: calc(100%/3);
+            padding: 0 15px;
+
+
+            .outline {
+                padding: 0 20px;
+                border-radius: 10px;
+                box-shadow: 0 1px 5px rgb(0 0 0/15%);
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
+                i {
+                    position: absolute;
+                    inset: 50% auto auto 0;
+                    font-size: 78px;
+                    translate: -40% -50%;
+                    z-index: 2;
+                    color: $secondaryColor;
+                    opacity: 0.3;
+                }
+
+                .title {
+                    text-align: right;
+                    font-weight: 600;
+                    color: $primaryColor;
+                    margin: 10px 0 15px 0;
+                }
+
+                .number {
+                    text-align: right;
+                    color: $statsNumberColor;
+                    font-size: 36px;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+
+    .offer {
+
+        .block-tittle {
+            @include fluid-type(320px, 1290px, 16px, 22px);
+        }
+
+        .services-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px 0;
+            justify-content: space-between;
+            margin: 30px -20px;
+
+            .service {
+                width: 50%;
+                display: block;
+                padding: 0 20px;
+
+                i {
+                    color: $detailprimaryColor;
+                    @include fluid-type(320px, 1290px, 20px, 40px);
+                }
+
+                .service-title {
+                    @include fluid-type(320px, 1290px, 12px, 18px);
+                    font-weight: 600;
+                }
+
+                .service-info {
+                    @include fluid-type (320px, 1290px, 10px, 16px);
+                    line-height: 1.6rem;
+                    color: $serviceInfoAboutMe;
+                }
+            }
+        }
+
+
+    }
+}
